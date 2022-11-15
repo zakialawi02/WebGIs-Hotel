@@ -1,0 +1,632 @@
+CRITICAL - 2022-11-13 02:44:49 --> Call to a member function getResult() on array
+in APPPATH\Controllers\Admin.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-13 02:59:40 --> mysqli_sql_exception: Table 'wwegis.provinces' doesn't exist in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\WEB\XAMPP\htdocs\wwegis\app\Models\ModelSekolah.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php(219): App\Models\ModelSekolah->allProvinsi()
+#6 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+#7 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEB\XAMPP\htdocs\wwegis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\WEB\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2022-11-13 02:59:40 --> Table 'wwegis.provinces' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `provinces`
+ORDER BY `id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `provinces`
+ORDER BY `id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `provinces`
+ORDER BY `id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `provinces`
+ORDER BY `id` ASC', [], false)
+ 5 APPPATH\Models\ModelSekolah.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(219): App\Models\ModelSekolah->allProvinsi()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-13 03:00:32 --> mysqli_sql_exception: Table 'wwegis.tbl_provinsi' doesn't exist in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\WEB\XAMPP\htdocs\wwegis\app\Models\ModelSekolah.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php(219): App\Models\ModelSekolah->allProvinsi()
+#6 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+#7 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEB\XAMPP\htdocs\wwegis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\WEB\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2022-11-13 03:00:32 --> Table 'wwegis.tbl_provinsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_provinsi`
+ORDER BY `id_provinsi` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_provinsi`
+ORDER BY `id_provinsi` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_provinsi`
+ORDER BY `id_provinsi` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_provinsi`
+ORDER BY `id_provinsi` ASC', [], false)
+ 5 APPPATH\Models\ModelSekolah.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(219): App\Models\ModelSekolah->allProvinsi()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-13 03:03:53 --> mysqli_sql_exception: Table 'wwegis.tbl_provinsi' doesn't exist in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\WEB\XAMPP\htdocs\wwegis\app\Models\ModelSekolah.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php(219): App\Models\ModelSekolah->allProvinsi()
+#6 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+#7 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEB\XAMPP\htdocs\wwegis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\WEB\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2022-11-13 03:03:53 --> Table 'wwegis.tbl_provinsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_provinsi`
+ORDER BY `id_provinsi` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_provinsi`
+ORDER BY `id_provinsi` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_provinsi`
+ORDER BY `id_provinsi` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_provinsi`
+ORDER BY `id_provinsi` ASC', [], false)
+ 5 APPPATH\Models\ModelSekolah.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(219): App\Models\ModelSekolah->allProvinsi()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 03:44:25 --> Undefined array key "nama_kabupaten"
+in APPPATH\Views\admin\tambahSekolah.php on line 57.
+ 1 APPPATH\Views\admin\tambahSekolah.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kabupaten"', 'APPPATH\\Views\\admin\\tambahSekolah.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\tambahSekolah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/tambahSekolah', [], true)
+ 5 APPPATH\Controllers\Admin.php(222): view('admin/tambahSekolah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 03:44:57 --> Undefined array key "nama_kabupaten"
+in APPPATH\Views\admin\tambahSekolah.php on line 57.
+ 1 APPPATH\Views\admin\tambahSekolah.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kabupaten"', 'APPPATH\\Views\\admin\\tambahSekolah.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\tambahSekolah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/tambahSekolah', [], true)
+ 5 APPPATH\Controllers\Admin.php(223): view('admin/tambahSekolah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 03:45:21 --> Too few arguments to function App\Models\ModelSekolah::allKabupaten(), 0 passed in F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php on line 220 and exactly 1 expected
+in APPPATH\Models\ModelSekolah.php on line 48.
+ 1 APPPATH\Controllers\Admin.php(220): App\Models\ModelSekolah->allKabupaten()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 03:45:23 --> Too few arguments to function App\Models\ModelSekolah::allKabupaten(), 0 passed in F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php on line 220 and exactly 1 expected
+in APPPATH\Models\ModelSekolah.php on line 48.
+ 1 APPPATH\Controllers\Admin.php(220): App\Models\ModelSekolah->allKabupaten()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 03:45:23 --> Too few arguments to function App\Models\ModelSekolah::allKabupaten(), 0 passed in F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php on line 220 and exactly 1 expected
+in APPPATH\Models\ModelSekolah.php on line 48.
+ 1 APPPATH\Controllers\Admin.php(220): App\Models\ModelSekolah->allKabupaten()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 03:52:26 --> Too few arguments to function App\Models\ModelSekolah::allKabupaten(), 0 passed in F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php on line 220 and exactly 1 expected
+in APPPATH\Models\ModelSekolah.php on line 48.
+ 1 APPPATH\Controllers\Admin.php(220): App\Models\ModelSekolah->allKabupaten()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 03:54:07 --> Too few arguments to function App\Models\ModelSekolah::allKabupaten(), 0 passed in F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php on line 220 and exactly 1 expected
+in APPPATH\Models\ModelSekolah.php on line 48.
+ 1 APPPATH\Controllers\Admin.php(220): App\Models\ModelSekolah->allKabupaten()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 03:57:44 --> Too few arguments to function App\Models\ModelSekolah::allKabupaten(), 0 passed in F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php on line 220 and exactly 1 expected
+in APPPATH\Models\ModelSekolah.php on line 48.
+ 1 APPPATH\Controllers\Admin.php(220): App\Models\ModelSekolah->allKabupaten()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 03:58:02 --> Undefined variable $kabupaten
+in APPPATH\Views\admin\tambahSekolah.php on line 56.
+ 1 APPPATH\Views\admin\tambahSekolah.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kabupaten', 'APPPATH\\Views\\admin\\tambahSekolah.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\tambahSekolah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/tambahSekolah', [], true)
+ 5 APPPATH\Controllers\Admin.php(223): view('admin/tambahSekolah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 04:09:31 --> Undefined property: App\Controllers\Admin::$sekolha
+in APPPATH\Controllers\Admin.php on line 230.
+ 1 APPPATH\Controllers\Admin.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$sekolha', 'APPPATH\\Controllers\\Admin.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->kabupaten('11')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 04:45:23 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('Admin/kabupaten', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 04:46:09 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('Admin/kabupaten', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 04:57:37 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('Admin/kabupaten', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 05:03:47 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('Admin/kabupaten', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 05:09:42 --> csrf_init_filter filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 493.
+ 1 SYSTEMPATH\Filters\Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('csrf_init_filter')
+ 2 SYSTEMPATH\Filters\Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('admin/data/sekolah/tambah')
+ 4 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('admin/data/sekolah/tambah', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 05:11:18 --> Cannot declare class Config\CSRFInitFilter, because the name is already in use
+in APPPATH\Config\Filters.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-13 05:11:49 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('Admin/kabupaten', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-13 06:42:06 --> mysqli_sql_exception: Table 'wwegis.tbl_provinsi' doesn't exist in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\WEB\XAMPP\htdocs\wwegis\app\Models\ModelSekolah.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php(219): App\Models\ModelSekolah->allProvinsi()
+#6 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+#7 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEB\XAMPP\htdocs\wwegis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\WEB\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2022-11-13 06:42:06 --> Table 'wwegis.tbl_provinsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_provinsi`
+ORDER BY `id_provinsi` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_provinsi`
+ORDER BY `id_provinsi` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_provinsi`
+ORDER BY `id_provinsi` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_provinsi`
+ORDER BY `id_provinsi` ASC', [], false)
+ 5 APPPATH\Models\ModelSekolah.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(219): App\Models\ModelSekolah->allProvinsi()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-13 07:59:55 --> mysqli_sql_exception: Table 'wwegis.user' doesn't exist in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` S...', 0)
+#1 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` S...')
+#2 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` S...')
+#3 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` S...', Array, false)
+#4 F:\WEB\XAMPP\htdocs\wwegis\app\Models\ModelSetting.php(34): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\User.php(59): App\Models\ModelSetting->updateMyData(Array, NULL)
+#6 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\User->UpdateMyData()
+#7 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEB\XAMPP\htdocs\wwegis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\WEB\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2022-11-13 07:59:55 --> Table 'wwegis.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` SET `full_name` = \'Aku Admin Skuyyyy\'
+WHERE `id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` SET `full_name` = \'Aku Admin Skuyyyy\'
+WHERE `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` SET `full_name` = \'Aku Admin Skuyyyy\'
+WHERE `id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` SET `full_name` = :full_name:
+WHERE `id` IS NULL', [...], false)
+ 5 APPPATH\Models\ModelSetting.php(34): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 APPPATH\Controllers\User.php(59): App\Models\ModelSetting->updateMyData([...], null)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->UpdateMyData()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 08:11:37 --> Attempt to read property "id" on array
+in APPPATH\Views\page\myProfile.php on line 95.
+ 1 APPPATH\Views\page\myProfile.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Views\\page\\myProfile.php', 95)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\page\\myProfile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('page/myProfile', [], true)
+ 5 APPPATH\Controllers\User.php(27): view('page/myProfile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->myProfile()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 08:13:16 --> Too few arguments to function App\Models\ModelSetting::updateMyData(), 1 passed in F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\User.php on line 59 and exactly 2 expected
+in APPPATH\Models\ModelSetting.php on line 31.
+ 1 APPPATH\Controllers\User.php(59): App\Models\ModelSetting->updateMyData([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->UpdateMyData()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-13 08:13:41 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`wwegis`.`auth_groups_users`, CONSTRAINT `auth_groups_users_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE) in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `users` ...', 0)
+#1 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 F:\WEB\XAMPP\htdocs\wwegis\app\Models\ModelSetting.php(33): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\User.php(59): App\Models\ModelSetting->updateMyData(Array)
+#6 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\User->UpdateMyData()
+#7 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEB\XAMPP\htdocs\wwegis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\WEB\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2022-11-13 08:13:41 --> Cannot delete or update a parent row: a foreign key constraint fails (`wwegis`.`auth_groups_users`, CONSTRAINT `auth_groups_users_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `users` SET `id` = \'1\', `full_name` = \'Aku Admin Skuy\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `id` = \'1\', `full_name` = \'Aku Admin Skuy\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `id` = \'1\', `full_name` = \'Aku Admin Skuy\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `id` = :id:, `full_name` = :full_name:', [...], false)
+ 5 APPPATH\Models\ModelSetting.php(33): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\User.php(59): App\Models\ModelSetting->updateMyData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->UpdateMyData()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 09:00:00 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Admin.php(244): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', '.geo')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 09:00:00 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Admin.php(244): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', '.geo')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 09:01:29 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Admin.php(244): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', '.geo')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 09:09:30 --> Undefined array key "id_provinsi"
+in APPPATH\Views\admin\tambahSekolah.php on line 48.
+ 1 APPPATH\Views\admin\tambahSekolah.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_provinsi"', 'APPPATH\\Views\\admin\\tambahSekolah.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\tambahSekolah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/tambahSekolah', [], true)
+ 5 APPPATH\Controllers\Admin.php(223): view('admin/tambahSekolah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 09:10:05 --> Undefined array key "enjang"
+in APPPATH\Views\admin\tambahSekolah.php on line 77.
+ 1 APPPATH\Views\admin\tambahSekolah.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "enjang"', 'APPPATH\\Views\\admin\\tambahSekolah.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\tambahSekolah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/tambahSekolah', [], true)
+ 5 APPPATH\Controllers\Admin.php(223): view('admin/tambahSekolah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-13 09:21:28 --> mysqli_sql_exception: Unknown column 'id_kelurahan' in 'field list' in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 F:\WEB\XAMPP\htdocs\wwegis\app\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah(Array)
+#6 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+#7 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEB\XAMPP\htdocs\wwegis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\WEB\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2022-11-13 09:21:28 --> Unknown column 'id_kelurahan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'21\', \'2105\', \'2105050\', \'2105050004\', \'A\', \'swasta\', \'1668352888_733196b07f0a77932290.jpeg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'21\', \'2105\', \'2105050\', \'2105050004\', \'A\', \'swasta\', \'1668352888_733196b07f0a77932290.jpeg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'21\', \'2105\', \'2105050\', \'2105050004\', \'A\', \'swasta\', \'1668352888_733196b07f0a77932290.jpeg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (:nama_sekolah:, :alamat_sekolah:, :coordinate:, :id_provinsi:, :id_kabupaten:, :id_kecamatan:, :id_kelurahan:, :akreditasi:, :status:, :foto_sekolah:)', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-13 09:23:13 --> mysqli_sql_exception: Column 'coordinate' cannot be null in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 F:\WEB\XAMPP\htdocs\wwegis\app\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah(Array)
+#6 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+#7 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEB\XAMPP\htdocs\wwegis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\WEB\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2022-11-13 09:23:13 --> Column 'coordinate' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'18\', \'1808\', \'1808055\', \'1808055007\', \'A\', \'swasta\', \'1668352993_7277a4652267c0ddbf87.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'18\', \'1808\', \'1808055\', \'1808055007\', \'A\', \'swasta\', \'1668352993_7277a4652267c0ddbf87.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'18\', \'1808\', \'1808055\', \'1808055007\', \'A\', \'swasta\', \'1668352993_7277a4652267c0ddbf87.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (:nama_sekolah:, :alamat_sekolah:, :coordinate:, :id_provinsi:, :id_kabupaten:, :id_kecamatan:, :id_kelurahan:, :akreditasi:, :status:, :foto_sekolah:)', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-13 09:24:20 --> mysqli_sql_exception: Column 'id_kabupaten' cannot be null in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 F:\WEB\XAMPP\htdocs\wwegis\app\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah(Array)
+#6 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+#7 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEB\XAMPP\htdocs\wwegis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\WEB\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2022-11-13 09:24:20 --> Column 'id_kabupaten' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'18\', NULL, NULL, NULL, \'A\', \'swasta\', \'1668353060_f3d18b8b6aa0dd6f62b3.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'18\', NULL, NULL, NULL, \'A\', \'swasta\', \'1668353060_f3d18b8b6aa0dd6f62b3.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'18\', NULL, NULL, NULL, \'A\', \'swasta\', \'1668353060_f3d18b8b6aa0dd6f62b3.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (:nama_sekolah:, :alamat_sekolah:, :coordinate:, :id_provinsi:, :id_kabupaten:, :id_kecamatan:, :id_kelurahan:, :akreditasi:, :status:, :foto_sekolah:)', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-13 09:26:43 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`wwegis`.`tbl_sekolah`, CONSTRAINT `tbl_sekolah_ibfk_1` FOREIGN KEY (`id_jenjang`) REFERENCES `tbl_jenjang` (`id_jenjang`)) in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 F:\WEB\XAMPP\htdocs\wwegis\app\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah(Array)
+#6 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+#7 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEB\XAMPP\htdocs\wwegis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\WEB\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2022-11-13 09:26:43 --> Cannot add or update a child row: a foreign key constraint fails (`wwegis`.`tbl_sekolah`, CONSTRAINT `tbl_sekolah_ibfk_1` FOREIGN KEY (`id_jenjang`) REFERENCES `tbl_jenjang` (`id_jenjang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'51\', \'5171\', \'5171030\', \'5171030009\', \'A\', \'swasta\', \'1668353203_80fe360534e32e3b190d.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'51\', \'5171\', \'5171030\', \'5171030009\', \'A\', \'swasta\', \'1668353203_80fe360534e32e3b190d.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'51\', \'5171\', \'5171030\', \'5171030009\', \'A\', \'swasta\', \'1668353203_80fe360534e32e3b190d.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (:nama_sekolah:, :alamat_sekolah:, :coordinate:, :id_provinsi:, :id_kabupaten:, :id_kecamatan:, :id_kelurahan:, :akreditasi:, :status:, :foto_sekolah:)', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-13 09:27:02 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`wwegis`.`tbl_sekolah`, CONSTRAINT `tbl_sekolah_ibfk_1` FOREIGN KEY (`id_jenjang`) REFERENCES `tbl_jenjang` (`id_jenjang`)) in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 F:\WEB\XAMPP\htdocs\wwegis\app\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah(Array)
+#6 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+#7 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEB\XAMPP\htdocs\wwegis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\WEB\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2022-11-13 09:27:02 --> Cannot add or update a child row: a foreign key constraint fails (`wwegis`.`tbl_sekolah`, CONSTRAINT `tbl_sekolah_ibfk_1` FOREIGN KEY (`id_jenjang`) REFERENCES `tbl_jenjang` (`id_jenjang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'51\', \'5171\', \'5171030\', \'5171030009\', \'A\', \'swasta\', \'1668353222_6820c02c81a387c796bd.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'51\', \'5171\', \'5171030\', \'5171030009\', \'A\', \'swasta\', \'1668353222_6820c02c81a387c796bd.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'51\', \'5171\', \'5171030\', \'5171030009\', \'A\', \'swasta\', \'1668353222_6820c02c81a387c796bd.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (:nama_sekolah:, :alamat_sekolah:, :coordinate:, :id_provinsi:, :id_kabupaten:, :id_kecamatan:, :id_kelurahan:, :akreditasi:, :status:, :foto_sekolah:)', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-13 09:27:19 --> mysqli_sql_exception: Column 'id_kabupaten' cannot be null in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 F:\WEB\XAMPP\htdocs\wwegis\app\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah(Array)
+#6 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+#7 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEB\XAMPP\htdocs\wwegis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\WEB\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2022-11-13 09:27:19 --> Column 'id_kabupaten' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'51\', NULL, NULL, NULL, \'A\', \'swasta\', \'1668353239_ef747e53db5bc12e4164.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'51\', NULL, NULL, NULL, \'A\', \'swasta\', \'1668353239_ef747e53db5bc12e4164.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'51\', NULL, NULL, NULL, \'A\', \'swasta\', \'1668353239_ef747e53db5bc12e4164.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (:nama_sekolah:, :alamat_sekolah:, :coordinate:, :id_provinsi:, :id_kabupaten:, :id_kecamatan:, :id_kelurahan:, :akreditasi:, :status:, :foto_sekolah:)', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-13 09:27:34 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`wwegis`.`tbl_sekolah`, CONSTRAINT `tbl_sekolah_ibfk_1` FOREIGN KEY (`id_jenjang`) REFERENCES `tbl_jenjang` (`id_jenjang`)) in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 F:\WEB\XAMPP\htdocs\wwegis\app\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah(Array)
+#6 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+#7 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\WEB\XAMPP\htdocs\wwegis\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\WEB\\XAMPP\\ht...')
+#11 {main}
+CRITICAL - 2022-11-13 09:27:34 --> Cannot add or update a child row: a foreign key constraint fails (`wwegis`.`tbl_sekolah`, CONSTRAINT `tbl_sekolah_ibfk_1` FOREIGN KEY (`id_jenjang`) REFERENCES `tbl_jenjang` (`id_jenjang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'63\', \'6304\', \'6304030\', \'6304030002\', \'A\', \'swasta\', \'1668353254_25ff40e9aa4896f81246.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'63\', \'6304\', \'6304030\', \'6304030002\', \'A\', \'swasta\', \'1668353254_25ff40e9aa4896f81246.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (\'nmbb\', \'jl.ngjgfdh\', NULL, \'63\', \'6304\', \'6304030\', \'6304030002\', \'A\', \'swasta\', \'1668353254_25ff40e9aa4896f81246.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_sekolah` (`nama_sekolah`, `alamat_sekolah`, `coordinate`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `id_kelurahan`, `akreditasi`, `status`, `foto_sekolah`) VALUES (:nama_sekolah:, :alamat_sekolah:, :coordinate:, :id_provinsi:, :id_kabupaten:, :id_kecamatan:, :id_kelurahan:, :akreditasi:, :status:, :foto_sekolah:)', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(32): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Admin.php(252): App\Models\ModelSekolah->addSekolah([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Sekolah()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 10:27:43 --> unlink(img/sekolah1668355200_35f90e93f782367a6c15.png): No such file or directory
+in APPPATH\Controllers\Admin.php on line 266.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/sekolah1668355200_35f90e93f782367a6c15.png): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 266)
+ 2 APPPATH\Controllers\Admin.php(266): unlink('img/sekolah1668355200_35f90e93f782367a6c15.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Sekolah('5')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-13 10:28:56 --> unlink(/img/sekolah/1668355200_35f90e93f782367a6c15.png): No such file or directory
+in APPPATH\Controllers\Admin.php on line 266.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/img/sekolah/1668355200_35f90e93f782367a6c15.png): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 266)
+ 2 APPPATH\Controllers\Admin.php(266): unlink('/img/sekolah/1668355200_35f90e93f782367a6c15.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Sekolah('5')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

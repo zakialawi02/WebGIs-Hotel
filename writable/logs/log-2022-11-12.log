@@ -1,0 +1,1090 @@
+CRITICAL - 2022-11-12 00:00:16 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 1577.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get('FCPATH\\geojson')
+ 2 APPPATH\Controllers\Admin.php(121): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:03:06 --> unlink(geojson/): Is a directory
+in APPPATH\Controllers\Admin.php on line 122.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/): Is a directory', 'APPPATH\\Controllers\\Admin.php', 122)
+ 2 APPPATH\Controllers\Admin.php(122): unlink('FCPATH\\geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:05:09 --> unlink(/geojson/): No such file or directory
+in APPPATH\Controllers\Admin.php on line 124.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/geojson/): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 124)
+ 2 APPPATH\Controllers\Admin.php(124): unlink('/geojson/')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:05:18 --> unlink(../geojson/): No such file or directory
+in APPPATH\Controllers\Admin.php on line 124.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../geojson/): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 124)
+ 2 APPPATH\Controllers\Admin.php(124): unlink('../geojson/')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:05:48 --> unlink(public/geojson/): No such file or directory
+in APPPATH\Controllers\Admin.php on line 124.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(public/geojson/): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 124)
+ 2 APPPATH\Controllers\Admin.php(124): unlink('public/geojson/')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:06:05 --> unlink(geojson/): Is a directory
+in APPPATH\Controllers\Admin.php on line 122.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/): Is a directory', 'APPPATH\\Controllers\\Admin.php', 122)
+ 2 APPPATH\Controllers\Admin.php(122): unlink('FCPATH\\geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:09:52 --> unlink(public/geojson/): No such file or directory
+in APPPATH\Controllers\Admin.php on line 125.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(public/geojson/): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 125)
+ 2 APPPATH\Controllers\Admin.php(125): unlink('public/geojson/')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:10:03 --> unlink(geojson/): Is a directory
+in APPPATH\Controllers\Admin.php on line 125.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/): Is a directory', 'APPPATH\\Controllers\\Admin.php', 125)
+ 2 APPPATH\Controllers\Admin.php(125): unlink('FCPATH\\geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:10:07 --> unlink(geojson/): Is a directory
+in APPPATH\Controllers\Admin.php on line 125.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/): Is a directory', 'APPPATH\\Controllers\\Admin.php', 125)
+ 2 APPPATH\Controllers\Admin.php(125): unlink('FCPATH\\geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:10:19 --> unlink(geojson/): Is a directory
+in APPPATH\Controllers\Admin.php on line 125.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/): Is a directory', 'APPPATH\\Controllers\\Admin.php', 125)
+ 2 APPPATH\Controllers\Admin.php(125): unlink('FCPATH\\geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:13:01 --> unlink(): http does not allow unlinking
+in APPPATH\Controllers\Admin.php on line 122.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(): http does not allow unlinking', 'APPPATH\\Controllers\\Admin.php', 122)
+ 2 APPPATH\Controllers\Admin.php(122): unlink('http://localhost:8080/geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:15:35 --> Cannot use object of type App\Models\ModelGeojson as array
+in APPPATH\Controllers\Admin.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:15:53 --> Cannot use object of type App\Models\ModelGeojson as array
+in APPPATH\Controllers\Admin.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:16:50 --> unlink(geojson/): Is a directory
+in APPPATH\Controllers\Admin.php on line 123.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/): Is a directory', 'APPPATH\\Controllers\\Admin.php', 123)
+ 2 APPPATH\Controllers\Admin.php(123): unlink('FCPATH\\geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:16:59 --> unlink(geojson/): Is a directory
+in APPPATH\Controllers\Admin.php on line 122.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/): Is a directory', 'APPPATH\\Controllers\\Admin.php', 122)
+ 2 APPPATH\Controllers\Admin.php(122): unlink('FCPATH\\geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:17:22 --> unlink(./geojson/): Is a directory
+in APPPATH\Controllers\Admin.php on line 122.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(./geojson/): Is a directory', 'APPPATH\\Controllers\\Admin.php', 122)
+ 2 APPPATH\Controllers\Admin.php(122): unlink('FCPATH\\geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:20:15 --> unlink(F:\WEB\XAMPP\htdocs\wwegis\app\geojson/): No such file or directory
+in APPPATH\Controllers\Admin.php on line 122.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(F:\\WEB\\XAMPP\\htdocs\\wwegis\\app\\geojson/): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 122)
+ 2 APPPATH\Controllers\Admin.php(122): unlink('APPPATH\\geojson/')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:21:24 --> Cannot use object of type App\Models\ModelGeojson as array
+in APPPATH\Controllers\Admin.php on line 122.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:28:12 --> CodeIgniter\Database\BaseResult::getFirstRow(): Argument #1 ($type) must be of type string, null given, called in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Model.php on line 183
+in SYSTEMPATH\Database\BaseResult.php on line 375.
+ 1 SYSTEMPATH\Model.php(183): CodeIgniter\Database\BaseResult->getFirstRow(null)
+ 2 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(true, '54540')
+ 3 APPPATH\Controllers\Admin.php(125): CodeIgniter\BaseModel->find('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:28:31 --> CodeIgniter\Database\BaseResult::getFirstRow(): Argument #1 ($type) must be of type string, null given, called in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Model.php on line 183
+in SYSTEMPATH\Database\BaseResult.php on line 375.
+ 1 SYSTEMPATH\Model.php(183): CodeIgniter\Database\BaseResult->getFirstRow(null)
+ 2 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(true, '54540')
+ 3 APPPATH\Controllers\Admin.php(125): CodeIgniter\BaseModel->find('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:28:58 --> CodeIgniter\Database\BaseResult::getFirstRow(): Argument #1 ($type) must be of type string, null given, called in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Model.php on line 183
+in SYSTEMPATH\Database\BaseResult.php on line 375.
+ 1 SYSTEMPATH\Model.php(183): CodeIgniter\Database\BaseResult->getFirstRow(null)
+ 2 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(true, '54540')
+ 3 APPPATH\Controllers\Admin.php(125): CodeIgniter\BaseModel->find('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:30:43 --> CodeIgniter\Database\BaseResult::getFirstRow(): Argument #1 ($type) must be of type string, null given, called in F:\WEB\XAMPP\htdocs\wwegis\vendor\codeigniter4\framework\system\Model.php on line 183
+in SYSTEMPATH\Database\BaseResult.php on line 375.
+ 1 SYSTEMPATH\Model.php(183): CodeIgniter\Database\BaseResult->getFirstRow(null)
+ 2 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(true, '54540')
+ 3 APPPATH\Controllers\Admin.php(125): CodeIgniter\BaseModel->find('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:31:13 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Controllers\Admin.php on line 125.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:31:29 --> unlink(geojson/1668232276_d16f5bd8c5bfa892c651.xml): No such file or directory
+in APPPATH\Controllers\Admin.php on line 127.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668232276_d16f5bd8c5bfa892c651.xml): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 127)
+ 2 APPPATH\Controllers\Admin.php(127): unlink('geojson/1668232276_d16f5bd8c5bfa892c651.xml')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54540')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:51:31 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\geojsonData.php on line 56.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/geojsonData', [], true)
+ 4 APPPATH\Controllers\Admin.php(75): view('admin/geojsonData', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->geojson()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:58:57 --> Undefined variable $updateGeojson
+in APPPATH\Views\admin\updateGeojson.php on line 29.
+ 1 APPPATH\Views\admin\updateGeojson.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $updateGeojson', 'APPPATH\\Views\\admin\\updateGeojson.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\updateGeojson.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/updateGeojson', [], true)
+ 5 APPPATH\Controllers\Admin.php(86): view('admin/updateGeojson', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->editGeojson('54543')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:59:56 --> Call to undefined method App\Models\ModelGeojson::callNote
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Admin.php(83): CodeIgniter\Model->__call('callNote', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->editGeojson('54543')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:59:57 --> Call to undefined method App\Models\ModelGeojson::callNote
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Admin.php(83): CodeIgniter\Model->__call('callNote', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->editGeojson('54543')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:59:58 --> Call to undefined method App\Models\ModelGeojson::callNote
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Admin.php(83): CodeIgniter\Model->__call('callNote', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->editGeojson('54543')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 00:59:59 --> Call to undefined method App\Models\ModelGeojson::callNote
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Admin.php(83): CodeIgniter\Model->__call('callNote', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->editGeojson('54543')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 01:00:00 --> Call to undefined method App\Models\ModelGeojson::callNote
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Admin.php(83): CodeIgniter\Model->__call('callNote', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->editGeojson('54543')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 01:00:01 --> Call to undefined method App\Models\ModelGeojson::callNote
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Admin.php(83): CodeIgniter\Model->__call('callNote', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->editGeojson('54543')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 01:10:08 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Admin.php(109): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', '1668237008_64ae84161959146cd4e2')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 01:10:48 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Admin.php(109): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', '1668237048_8cbbb1ecdd8f73a8023f')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 01:28:28 --> Undefined variable $updateGeojson
+in APPPATH\Views\_Layout\_template\_admin\templateAdmin.php on line 106.
+ 1 APPPATH\Views\_Layout\_template\_admin\templateAdmin.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $updateGeojson', 'APPPATH\\Views\\_Layout\\_template\\_admin\\templateAdmin.php', 106)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\templateAdmin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('_Layout/_template/_admin/templateAdmin', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/geojsonData', [], true)
+ 6 APPPATH\Controllers\Admin.php(75): view('admin/geojsonData', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->geojson()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 02:08:15 --> Illegal offset type
+in SYSTEMPATH\HTTP\RequestTrait.php on line 273.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(503): CodeIgniter\HTTP\Request->fetchGlobal('request', Object(CodeIgniter\HTTP\Files\UploadedFile), 516, 0)
+ 2 APPPATH\Controllers\Admin.php(137): CodeIgniter\HTTP\IncomingRequest->getVar(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 02:39:47 --> Object of class CodeIgniter\HTTP\Files\UploadedFile could not be converted to int
+in APPPATH\Controllers\Admin.php on line 140.
+ 1 APPPATH\Controllers\Admin.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class CodeIgniter\\HTTP\\Files\\UploadedFile could not be converted to int', 'APPPATH\\Controllers\\Admin.php', 140)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 02:58:56 --> Could not move file php29C2.tmp to geojson/ ()
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php29C2.tmp', 'FCPATH\\geojson', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\Admin.php(109): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', 'F:\\WEB\\XAMPP\\tmp\\php29C2.tmp')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 02:59:11 --> Could not move file php6758.tmp to geojson/ ()
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php6758.tmp', 'FCPATH\\geojson', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\Admin.php(109): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', 'F:\\WEB\\XAMPP\\tmp\\php6758.tmp')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 03:34:27 --> Call to a member function getName() on string
+in APPPATH\Controllers\Admin.php on line 140.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 03:35:40 --> Call to a member function getName() on string
+in APPPATH\Controllers\Admin.php on line 140.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 03:35:43 --> Call to a member function getName() on string
+in APPPATH\Controllers\Admin.php on line 140.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 03:45:23 --> Call to a member function getName() on string
+in APPPATH\Controllers\Admin.php on line 146.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 03:46:10 --> unlink(geojson/1668246250_9307c9d5f191062a3bdb.json): No such file or directory
+in APPPATH\Controllers\Admin.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668246250_9307c9d5f191062a3bdb.json): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 152)
+ 2 APPPATH\Controllers\Admin.php(152): unlink('geojson/1668246250_9307c9d5f191062a3bdb.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 03:46:35 --> unlink(geojson/1668246250_9307c9d5f191062a3bdb.json): No such file or directory
+in APPPATH\Controllers\Admin.php on line 179.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668246250_9307c9d5f191062a3bdb.json): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 179)
+ 2 APPPATH\Controllers\Admin.php(179): unlink('geojson/1668246250_9307c9d5f191062a3bdb.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54552')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 03:46:52 --> unlink(geojson/1668246250_9307c9d5f191062a3bdb.json): No such file or directory
+in APPPATH\Controllers\Admin.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668246250_9307c9d5f191062a3bdb.json): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 152)
+ 2 APPPATH\Controllers\Admin.php(152): unlink('geojson/1668246250_9307c9d5f191062a3bdb.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 03:47:10 --> unlink(geojson/1668246250_9307c9d5f191062a3bdb.json): No such file or directory
+in APPPATH\Controllers\Admin.php on line 179.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668246250_9307c9d5f191062a3bdb.json): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 179)
+ 2 APPPATH\Controllers\Admin.php(179): unlink('geojson/1668246250_9307c9d5f191062a3bdb.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54552')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 03:49:39 --> unlink(geojson/1668246467_0a44c6a7cf294a4a530e.json): No such file or directory
+in APPPATH\Controllers\Admin.php on line 186.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668246467_0a44c6a7cf294a4a530e.json): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 186)
+ 2 APPPATH\Controllers\Admin.php(186): unlink('geojson/1668246467_0a44c6a7cf294a4a530e.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54553')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:03:30 --> unlink(geojson/1668247367_62bf46cdfeda46cd54a2.json): No such file or directory
+in APPPATH\Controllers\Admin.php on line 151.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668247367_62bf46cdfeda46cd54a2.json): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 151)
+ 2 APPPATH\Controllers\Admin.php(151): unlink('geojson/1668247367_62bf46cdfeda46cd54a2.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:03:47 --> Attempt to read property "id" on null
+in APPPATH\Views\admin\updateGeojson.php on line 29.
+ 1 APPPATH\Views\admin\updateGeojson.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Views\\admin\\updateGeojson.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\updateGeojson.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/updateGeojson', [], true)
+ 5 APPPATH\Controllers\Admin.php(86): view('admin/updateGeojson', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->editGeojson('54554')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:03:47 --> Attempt to read property "id" on null
+in APPPATH\Views\admin\updateGeojson.php on line 29.
+ 1 APPPATH\Views\admin\updateGeojson.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Views\\admin\\updateGeojson.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\updateGeojson.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/updateGeojson', [], true)
+ 5 APPPATH\Controllers\Admin.php(86): view('admin/updateGeojson', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->editGeojson('54554')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:03:51 --> Attempt to read property "geojson" on null
+in APPPATH\Controllers\Admin.php on line 150.
+ 1 APPPATH\Controllers\Admin.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "geojson" on null', 'APPPATH\\Controllers\\Admin.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:03:52 --> Attempt to read property "id" on null
+in APPPATH\Views\admin\updateGeojson.php on line 29.
+ 1 APPPATH\Views\admin\updateGeojson.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Views\\admin\\updateGeojson.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\updateGeojson.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/updateGeojson', [], true)
+ 5 APPPATH\Controllers\Admin.php(86): view('admin/updateGeojson', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->editGeojson('54554')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:09:11 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Admin.php(156): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', '1668247751_5f4bc8c1a4d66bb28320')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:09:18 --> unlink(geojson/1668247744_8d33ff2f86cc5d60d66f.csv): No such file or directory
+in APPPATH\Controllers\Admin.php on line 149.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668247744_8d33ff2f86cc5d60d66f.csv): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 149)
+ 2 APPPATH\Controllers\Admin.php(149): unlink('geojson/1668247744_8d33ff2f86cc5d60d66f.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:24:34 --> Attempt to read property "geojson" on null
+in APPPATH\Controllers\Admin.php on line 177.
+ 1 APPPATH\Controllers\Admin.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "geojson" on null', 'APPPATH\\Controllers\\Admin.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54557')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:30:41 --> Call to a member function getMethod() on string
+in APPPATH\Controllers\Admin.php on line 143.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:30:48 --> Call to a member function getMethod() on string
+in APPPATH\Controllers\Admin.php on line 143.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:52:30 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Admin.php on line 166.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:52:38 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Admin.php on line 166.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:52:40 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Admin.php on line 166.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:53:52 --> unlink(geojson/1668249095_118e0838a1dbade88298.json): No such file or directory
+in APPPATH\Controllers\Admin.php on line 144.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668249095_118e0838a1dbade88298.json): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 144)
+ 2 APPPATH\Controllers\Admin.php(144): unlink('geojson/1668249095_118e0838a1dbade88298.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 04:55:20 --> unlink(geojson/1668249095_118e0838a1dbade88298.json): No such file or directory
+in APPPATH\Controllers\Admin.php on line 181.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668249095_118e0838a1dbade88298.json): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 181)
+ 2 APPPATH\Controllers\Admin.php(181): unlink('geojson/1668249095_118e0838a1dbade88298.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54558')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 05:19:22 --> Undefined variable $geojson
+in APPPATH\Controllers\Admin.php on line 156.
+ 1 APPPATH\Controllers\Admin.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $geojson', 'APPPATH\\Controllers\\Admin.php', 156)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 05:20:53 --> unlink(geojson/1668251074_f23e581c9d87d80bbfbe.csv): No such file or directory
+in APPPATH\Controllers\Admin.php on line 148.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668251074_f23e581c9d87d80bbfbe.csv): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 148)
+ 2 APPPATH\Controllers\Admin.php(148): unlink('geojson/1668251074_f23e581c9d87d80bbfbe.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 05:21:01 --> unlink(geojson/1668251074_f23e581c9d87d80bbfbe.csv): No such file or directory
+in APPPATH\Controllers\Admin.php on line 148.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668251074_f23e581c9d87d80bbfbe.csv): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 148)
+ 2 APPPATH\Controllers\Admin.php(148): unlink('geojson/1668251074_f23e581c9d87d80bbfbe.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 05:21:15 --> Undefined variable $geojson
+in APPPATH\Controllers\Admin.php on line 159.
+ 1 APPPATH\Controllers\Admin.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $geojson', 'APPPATH\\Controllers\\Admin.php', 159)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 05:27:44 --> unlink(geojson/1668252337_503a5b1a64121943a405.json): No such file or directory
+in APPPATH\Controllers\Admin.php on line 148.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668252337_503a5b1a64121943a405.json): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 148)
+ 2 APPPATH\Controllers\Admin.php(148): unlink('geojson/1668252337_503a5b1a64121943a405.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 05:33:33 --> Undefined variable $namaFile
+in APPPATH\Controllers\Admin.php on line 167.
+ 1 APPPATH\Controllers\Admin.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namaFile', 'APPPATH\\Controllers\\Admin.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 05:37:24 --> 'break' not in the 'loop' or 'switch' context
+in APPPATH\Controllers\Admin.php on line 154.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-12 05:44:58 --> Undefined variable $fileGeojsonBaru
+in APPPATH\Controllers\Admin.php on line 147.
+ 1 APPPATH\Controllers\Admin.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fileGeojsonBaru', 'APPPATH\\Controllers\\Admin.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 05:47:50 --> unlink(geojson/F:\WEB\XAMPP\tmp\phpB28A.tmp): No such file or directory
+in APPPATH\Controllers\Admin.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/F:\\WEB\\XAMPP\\tmp\\phpB28A.tmp): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 153)
+ 2 APPPATH\Controllers\Admin.php(153): unlink('geojson/F:\\WEB\\XAMPP\\tmp\\phpB28A.tmp')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 05:47:59 --> unlink(geojson/F:\WEB\XAMPP\tmp\phpB28A.tmp): No such file or directory
+in APPPATH\Controllers\Admin.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/F:\\WEB\\XAMPP\\tmp\\phpB28A.tmp): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 153)
+ 2 APPPATH\Controllers\Admin.php(153): unlink('geojson/F:\\WEB\\XAMPP\\tmp\\phpB28A.tmp')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 06:01:16 --> unlink(geojson/1668253847_d5ac2b89e64f469fcf8f.csv): No such file or directory
+in APPPATH\Controllers\Admin.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668253847_d5ac2b89e64f469fcf8f.csv): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 155)
+ 2 APPPATH\Controllers\Admin.php(155): unlink('geojson/1668253847_d5ac2b89e64f469fcf8f.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 06:27:54 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Controllers\Admin.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-12 06:41:04 --> unlink(geojson/1668256845_810f1465b745eac516e4.json): No such file or directory
+in APPPATH\Controllers\Admin.php on line 175.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668256845_810f1465b745eac516e4.json): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 175)
+ 2 APPPATH\Controllers\Admin.php(175): unlink('geojson/1668256845_810f1465b745eac516e4.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54563')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 07:03:09 --> Could not move file phpC484.tmp to F:\WEB\XAMPP\htdocs\wwegis\public/geojson/ ()
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpC484.tmp', 'FCPATH\\geojson', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\Admin.php(110): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', 'F:\\WEB\\XAMPP\\tmp\\phpC484.tmp')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 07:24:06 --> unlink(geojson/1668258108_33a9feb3a5801bbee9d5.json): No such file or directory
+in APPPATH\Controllers\Admin.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668258108_33a9feb3a5801bbee9d5.json): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 176)
+ 2 APPPATH\Controllers\Admin.php(176): unlink('geojson/1668258108_33a9feb3a5801bbee9d5.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54568')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 07:24:11 --> unlink(geojson/1668259435_55790f8abcce92a04029.json): No such file or directory
+in APPPATH\Controllers\Admin.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668259435_55790f8abcce92a04029.json): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 176)
+ 2 APPPATH\Controllers\Admin.php(176): unlink('geojson/1668259435_55790f8abcce92a04029.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->delete_Geojson('54572')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 07:27:14 --> Could not move file phpCF3C.tmp to F:\WEB\XAMPP\htdocs\wwegis\public/geojson/ ()
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpCF3C.tmp', 'FCPATH\\geojson', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\Admin.php(111): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', '<?= 1668259634_12726b6f0e2dc375b4a4.json; ?>.geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 07:27:47 --> Could not move file php51CB.tmp to F:\WEB\XAMPP\htdocs\wwegis\public/geojson/ ()
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php51CB.tmp', 'FCPATH\\geojson', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\Admin.php(111): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', '<?= 1668259667_eac9671d3e0690c74f7f.json; ?>.geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 07:28:12 --> Could not move file phpB1FD.tmp to F:\WEB\XAMPP\htdocs\wwegis\public/geojson/ ()
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpB1FD.tmp', 'FCPATH\\geojson', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\Admin.php(111): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', '<?= 1668259692_0ff594c5823130ec8e40.json; ?>.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 07:28:55 --> Could not move file php59B7.tmp to F:\WEB\XAMPP\htdocs\wwegis\public/geojson/ ()
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php59B7.tmp', 'FCPATH\\geojson', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\Admin.php(111): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', '<?= 1668259735_260cd3d8d176cf909182.json; ?>json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 07:29:03 --> Could not move file php7A31.tmp to F:\WEB\XAMPP\htdocs\wwegis\public/geojson/ ()
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php7A31.tmp', 'FCPATH\\geojson', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\Admin.php(111): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', '<?= 1668259743_3004e953863cfd56e098.json; ?>json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 07:30:39 --> Could not move file phpF019.tmp to F:\WEB\XAMPP\htdocs\wwegis\public/geojson/ ()
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpF019.tmp', 'FCPATH\\geojson', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\Admin.php(112): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\geojson', '<?= 2022-11-12 07:30:39; ?>.json')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambah_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 08:25:00 --> 'break' not in the 'loop' or 'switch' context
+in APPPATH\Controllers\Admin.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-12 08:36:04 --> 'break' not in the 'loop' or 'switch' context
+in APPPATH\Controllers\Admin.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-12 08:47:56 --> Too few arguments to function App\Models\ModelGeojson::updateGeojson(), 1 passed in F:\WEB\XAMPP\htdocs\wwegis\app\Controllers\Admin.php on line 167 and exactly 2 expected
+in APPPATH\Models\ModelGeojson.php on line 35.
+ 1 APPPATH\Controllers\Admin.php(167): App\Models\ModelGeojson->updateGeojson([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 08:48:51 --> unlink(geojson/1668264431_23e406a8fa932af59bee.csv.geocsv): No such file or directory
+in APPPATH\Controllers\Admin.php on line 150.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668264431_23e406a8fa932af59bee.csv.geocsv): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 150)
+ 2 APPPATH\Controllers\Admin.php(150): unlink('geojson/1668264431_23e406a8fa932af59bee.csv.geocsv')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 08:59:41 --> unlink(geojson/1668265036_2d013ed1f5fc8a1ca91f.csv.geocsv): No such file or directory
+in APPPATH\Controllers\Admin.php on line 148.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668265036_2d013ed1f5fc8a1ca91f.csv.geocsv): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 148)
+ 2 APPPATH\Controllers\Admin.php(148): unlink('geojson/1668265036_2d013ed1f5fc8a1ca91f.csv.geocsv')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 08:59:52 --> unlink(geojson/1668265036_2d013ed1f5fc8a1ca91f.csv.geocsv): No such file or directory
+in APPPATH\Controllers\Admin.php on line 148.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668265036_2d013ed1f5fc8a1ca91f.csv.geocsv): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 148)
+ 2 APPPATH\Controllers\Admin.php(148): unlink('geojson/1668265036_2d013ed1f5fc8a1ca91f.csv.geocsv')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 09:08:11 --> unlink(geojson/1668265220_ba1ebbcb86abc70e12de.json.geojson): No such file or directory
+in APPPATH\Controllers\Admin.php on line 147.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668265220_ba1ebbcb86abc70e12de.json.geojson): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 147)
+ 2 APPPATH\Controllers\Admin.php(147): unlink('geojson/1668265220_ba1ebbcb86abc70e12de.json.geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 09:08:34 --> Allowed fields must be specified for model: App\Models\ModelGeojson
+in SYSTEMPATH\BaseModel.php on line 1160.
+ 1 SYSTEMPATH\BaseModel.php(1160): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\ModelGeojson')
+ 2 SYSTEMPATH\BaseModel.php(724): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Controllers\Admin.php(162): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 09:14:03 --> unlink(geojson/1668265775_3cd0f820526f0232567f.json.geojson): No such file or directory
+in APPPATH\Controllers\Admin.php on line 144.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(geojson/1668265775_3cd0f820526f0232567f.json.geojson): No such file or directory', 'APPPATH\\Controllers\\Admin.php', 144)
+ 2 APPPATH\Controllers\Admin.php(144): unlink('geojson/1668265775_3cd0f820526f0232567f.json.geojson')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 09:26:23 --> Allowed fields must be specified for model: App\Models\ModelGeojson
+in SYSTEMPATH\BaseModel.php on line 1160.
+ 1 SYSTEMPATH\BaseModel.php(1160): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\ModelGeojson')
+ 2 SYSTEMPATH\BaseModel.php(862): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 4 SYSTEMPATH\BaseModel.php(657): CodeIgniter\Model->update('54578', [...])
+ 5 APPPATH\Controllers\Admin.php(165): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 09:26:57 --> Allowed fields must be specified for model: App\Models\ModelGeojson
+in SYSTEMPATH\BaseModel.php on line 1160.
+ 1 SYSTEMPATH\BaseModel.php(1160): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\ModelGeojson')
+ 2 SYSTEMPATH\BaseModel.php(862): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 4 SYSTEMPATH\BaseModel.php(657): CodeIgniter\Model->update('54578', [...])
+ 5 APPPATH\Controllers\Admin.php(165): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 09:45:21 --> Cannot use object of type App\Models\ModelGeojson as array
+in APPPATH\Controllers\Admin.php on line 184.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_Geojson()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 10:17:27 --> Undefined variable $updateGeojson
+in APPPATH\Views\_Layout\_template\_admin\templateAdmin.php on line 106.
+ 1 APPPATH\Views\_Layout\_template\_admin\templateAdmin.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $updateGeojson', 'APPPATH\\Views\\_Layout\\_template\\_admin\\templateAdmin.php', 106)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\templateAdmin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('_Layout/_template/_admin/templateAdmin', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/geojsonData', [], true)
+ 6 APPPATH\Controllers\Admin.php(75): view('admin/geojsonData', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->geojson()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 10:18:59 --> Undefined variable $updateGeojson
+in APPPATH\Views\_Layout\_template\_admin\templateAdmin.php on line 106.
+ 1 APPPATH\Views\_Layout\_template\_admin\templateAdmin.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $updateGeojson', 'APPPATH\\Views\\_Layout\\_template\\_admin\\templateAdmin.php', 106)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\templateAdmin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('_Layout/_template/_admin/templateAdmin', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/geojsonData', [], true)
+ 6 APPPATH\Controllers\Admin.php(75): view('admin/geojsonData', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->geojson()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 10:19:11 --> Undefined variable $id
+in APPPATH\Controllers\Admin.php on line 73.
+ 1 APPPATH\Controllers\Admin.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Admin.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->geojson()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 10:36:04 --> Attempt to read property "geojson" on null
+in APPPATH\Views\_Layout\_template\_admin\templateGeojsonData.php on line 113.
+ 1 APPPATH\Views\_Layout\_template\_admin\templateGeojsonData.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "geojson" on null', 'APPPATH\\Views\\_Layout\\_template\\_admin\\templateGeojsonData.php', 113)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\templateGeojsonData.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('_Layout/_template/_admin/templateGeojsonData', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/geojsonData', [], true)
+ 6 APPPATH\Controllers\Admin.php(76): view('admin/geojsonData', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->geojson()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 10:36:11 --> Attempt to read property "geojson" on null
+in APPPATH\Views\_Layout\_template\_admin\templateGeojsonData.php on line 113.
+ 1 APPPATH\Views\_Layout\_template\_admin\templateGeojsonData.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "geojson" on null', 'APPPATH\\Views\\_Layout\\_template\\_admin\\templateGeojsonData.php', 113)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\templateGeojsonData.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('_Layout/_template/_admin/templateGeojsonData', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/geojsonData', [], true)
+ 6 APPPATH\Controllers\Admin.php(76): view('admin/geojsonData', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->geojson()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 10:36:13 --> Attempt to read property "geojson" on null
+in APPPATH\Views\_Layout\_template\_admin\templateGeojsonData.php on line 113.
+ 1 APPPATH\Views\_Layout\_template\_admin\templateGeojsonData.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "geojson" on null', 'APPPATH\\Views\\_Layout\\_template\\_admin\\templateGeojsonData.php', 113)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\templateGeojsonData.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('_Layout/_template/_admin/templateGeojsonData', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/geojsonData', [], true)
+ 6 APPPATH\Controllers\Admin.php(76): view('admin/geojsonData', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->geojson()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 10:36:15 --> Attempt to read property "geojson" on null
+in APPPATH\Views\_Layout\_template\_admin\templateGeojsonData.php on line 113.
+ 1 APPPATH\Views\_Layout\_template\_admin\templateGeojsonData.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "geojson" on null', 'APPPATH\\Views\\_Layout\\_template\\_admin\\templateGeojsonData.php', 113)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\templateGeojsonData.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('_Layout/_template/_admin/templateGeojsonData', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/geojsonData', [], true)
+ 6 APPPATH\Controllers\Admin.php(76): view('admin/geojsonData', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->geojson()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 12:27:49 --> Undefined variable $tampilGeojson
+in APPPATH\Views\_Layout\_template\_admin\jsLeaflet.php on line 42.
+ 1 APPPATH\Views\_Layout\_template\_admin\jsLeaflet.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tampilGeojson', 'APPPATH\\Views\\_Layout\\_template\\_admin\\jsLeaflet.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\jsLeaflet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('_Layout/_template/_Admin/jsLeaflet', null, true)
+ 5 APPPATH\Views\_Layout\_template\_admin\templateSettingMap.php(114): CodeIgniter\View\View->include('_Layout/_template/_Admin/jsLeaflet')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\templateSettingMap.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('_Layout/_template/_admin/templateSettingMap', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/settingMapView', [], true)
+10 APPPATH\Controllers\Admin.php(38): view('admin/settingMapView', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->Setting()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 12:27:52 --> Undefined variable $tampilGeojson
+in APPPATH\Views\_Layout\_template\_admin\jsLeaflet.php on line 42.
+ 1 APPPATH\Views\_Layout\_template\_admin\jsLeaflet.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tampilGeojson', 'APPPATH\\Views\\_Layout\\_template\\_admin\\jsLeaflet.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\jsLeaflet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('_Layout/_template/_Admin/jsLeaflet', null, true)
+ 5 APPPATH\Views\_Layout\_template\_admin\templateSettingMap.php(114): CodeIgniter\View\View->include('_Layout/_template/_Admin/jsLeaflet')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\templateSettingMap.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('_Layout/_template/_admin/templateSettingMap', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/settingMapView', [], true)
+10 APPPATH\Controllers\Admin.php(38): view('admin/settingMapView', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->Setting()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 22:38:21 --> Undefined variable $tampilData
+in APPPATH\Views\_Layout\_template\_admin\jsLeaflet.php on line 42.
+ 1 APPPATH\Views\_Layout\_template\_admin\jsLeaflet.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tampilData', 'APPPATH\\Views\\_Layout\\_template\\_admin\\jsLeaflet.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\jsLeaflet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('_Layout/_template/_Admin/jsLeaflet', null, true)
+ 5 APPPATH\Views\_Layout\_template\_admin\templateGeojsonData.php(114): CodeIgniter\View\View->include('_Layout/_template/_Admin/jsLeaflet')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\templateGeojsonData.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('_Layout/_template/_admin/templateGeojsonData', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/geojsonData', [], true)
+10 APPPATH\Controllers\Admin.php(216): view('admin/geojsonData', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sekolah()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 22:38:30 --> Undefined variable $tampilGeojson
+in APPPATH\Views\admin\geojsonData.php on line 48.
+ 1 APPPATH\Views\admin\geojsonData.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tampilGeojson', 'APPPATH\\Views\\admin\\geojsonData.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\geojsonData.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/geojsonData', [], true)
+ 5 APPPATH\Controllers\Admin.php(216): view('admin/geojsonData', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sekolah()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 22:41:28 --> Undefined variable $tampilGeojson
+in APPPATH\Views\admin\geojsonData.php on line 48.
+ 1 APPPATH\Views\admin\geojsonData.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tampilGeojson', 'APPPATH\\Views\\admin\\geojsonData.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\geojsonData.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/geojsonData', [], true)
+ 5 APPPATH\Controllers\Admin.php(216): view('admin/geojsonData', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sekolah()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 22:41:57 --> Undefined variable $tampilGeojson
+in APPPATH\Views\_Layout\_template\_admin\jsLeaflet.php on line 51.
+ 1 APPPATH\Views\_Layout\_template\_admin\jsLeaflet.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tampilGeojson', 'APPPATH\\Views\\_Layout\\_template\\_admin\\jsLeaflet.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\jsLeaflet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('_Layout/_template/_Admin/jsLeaflet', null, true)
+ 5 APPPATH\Views\_Layout\_template\_admin\templateSekolahData.php(114): CodeIgniter\View\View->include('_Layout/_template/_Admin/jsLeaflet')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\templateSekolahData.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('_Layout/_template/_admin/templateSekolahData', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/sekolahData', [], true)
+10 APPPATH\Controllers\Admin.php(216): view('admin/sekolahData', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sekolah()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 23:14:31 --> Undefined property: App\Controllers\Admin::$Setting
+in APPPATH\Controllers\Admin.php on line 35.
+ 1 APPPATH\Controllers\Admin.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$Setting', 'APPPATH\\Controllers\\Admin.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->Setting()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 23:15:38 --> Undefined property: App\Controllers\Admin::$Setting
+in APPPATH\Controllers\Admin.php on line 34.
+ 1 APPPATH\Controllers\Admin.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$Setting', 'APPPATH\\Controllers\\Admin.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->Setting()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 23:15:55 --> Undefined property: App\Controllers\Admin::$Setting
+in APPPATH\Controllers\Admin.php on line 37.
+ 1 APPPATH\Controllers\Admin.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$Setting', 'APPPATH\\Controllers\\Admin.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->Setting()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 23:19:19 --> Undefined property: App\Controllers\Admin::$Setting
+in APPPATH\Controllers\Admin.php on line 38.
+ 1 APPPATH\Controllers\Admin.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$Setting', 'APPPATH\\Controllers\\Admin.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->Setting()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 23:24:06 --> Undefined property: App\Controllers\Admin::$Setting
+in APPPATH\Controllers\Admin.php on line 38.
+ 1 APPPATH\Controllers\Admin.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$Setting', 'APPPATH\\Controllers\\Admin.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->Setting()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 23:24:36 --> Undefined property: App\Controllers\Admin::$Setting
+in APPPATH\Controllers\Admin.php on line 38.
+ 1 APPPATH\Controllers\Admin.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$Setting', 'APPPATH\\Controllers\\Admin.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->Setting()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-12 23:47:44 --> Undefined variable $tampilData
+in APPPATH\Views\_Layout\_template\_admin\jsLeaflet.php on line 42.
+ 1 APPPATH\Views\_Layout\_template\_admin\jsLeaflet.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tampilData', 'APPPATH\\Views\\_Layout\\_template\\_admin\\jsLeaflet.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\jsLeaflet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('_Layout/_template/_Admin/jsLeaflet', null, true)
+ 5 APPPATH\Views\_Layout\_template\_admin\templateSekolahData.php(114): CodeIgniter\View\View->include('_Layout/_template/_Admin/jsLeaflet')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\_Layout\\_template\\_admin\\templateSekolahData.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('_Layout/_template/_admin/templateSekolahData', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/tambahSekolah', [], true)
+10 APPPATH\Controllers\Admin.php(217): view('admin/tambahSekolah', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->tambahSekolah()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
