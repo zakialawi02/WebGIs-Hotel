@@ -216,7 +216,7 @@ class Admin extends BaseController
             'tampilGeojson' => $this->FGeojson->callGeojson()->getResult(),
             'updateGeojson' => $this->FGeojson->callGeojson()->getRow(),
             'provinsi' => $this->hotel->allProvinsi(),
-            'jenjang' => $this->hotel->allJenjang(),
+            'bintangHotel' => $this->hotel->allBintang(),
         ];
 
         return view('admin/tambahHotel', $data);
@@ -237,15 +237,13 @@ class Admin extends BaseController
 
         $data = [
             'nama_hotel' => $this->request->getVar('nama_hotel'),
+            'id_bintang'  => $this->request->getVar('status_bintang'),
             'alamat_hotel'  => $this->request->getVar('alamat_hotel'),
             'coordinate'  => $this->request->getVar('coordinate'),
             'id_provinsi'  => $this->request->getVar('id_provinsi'),
             'id_kabupaten'  => $this->request->getVar('id_kabupaten'),
             'id_kecamatan'  => $this->request->getVar('id_kecamatan'),
             'id_kelurahan'  => $this->request->getVar('id_kelurahan'),
-            'id_jenjang'  => $this->request->getVar('id_jenjang'),
-            'akreditasi'  => $this->request->getVar('akreditasi'),
-            'status'  => $this->request->getVar('status'),
             'foto_hotel'  => $randomName,
         ];
 

@@ -11,7 +11,7 @@ class ModelHotel extends Model
     protected $primaryKey = 'id_hotel';
 
 
-    protected $allowFields = ['id_jenjang', 'nama_hotel', 'alamat_hotel', 'akreditasi', 'status', 'coordinate', 'foto', 'id_provinsi', 'id_kabkot', 'id_kecamatan'];
+    protected $allowFields = ['id_bintang', 'nama_hotel', 'alamat_hotel', 'status_bintang', 'coordinate', 'foto', 'id_provinsi', 'id_kabkot', 'id_kecamatan'];
 
     function __construct()
     {
@@ -43,10 +43,10 @@ class ModelHotel extends Model
 
 
 
-    // Jenjang
-    public function allJenjang()
+    // Statu Bintang Hotel
+    public function allBintang()
     {
-        return $this->db->table('tbl_jenjang')->orderBy('id_jenjang', 'ASC')->get()->getResultArray();
+        return $this->db->table('tbl_status_bintang')->orderBy('id_bintang', 'ASC')->get()->getResultArray();
     }
 
     // PROVINSI

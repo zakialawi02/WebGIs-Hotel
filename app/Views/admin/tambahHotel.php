@@ -28,17 +28,26 @@
                         <form class="row g-3" action="/admin/tambah_Hotel" method="post" enctype="multipart/form-data">
                             <?= csrf_field(); ?>
 
-                            <div class="mb-3">
+                            <div class="col-12">
                                 <label for="nama_hotel" class="form-label">Nama Hotel</label>
                                 <input type="text" class="form-control" id="nama_hotel" aria-describedby="textlHelp" name="nama_hotel">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="status_bintang" class="form-label">Status</label>
+                                <select class="form-control select2" id="status_bintang" name="status_bintang">
+                                    <option value="">--Pilih Bintang--</option>
+                                    <?php foreach ($bintangHotel as $key => $value) : ?>
+                                        <option value="<?= $value['id_bintang'] ?>"><?= $value['status_bintang'] ?></option>
+                                    <?php endforeach ?>
+                                </select>
                             </div>
                             <div class="col-md-6">
                                 <label for="alamat_hotel" class="form-label">Alamat Hotel</label>
                                 <input type="text" class="form-control" id="alamat_hotel" aria-describedby="textlHelp" name="alamat_hotel">
                             </div>
                             <div class="col-md-6">
-                                <label for="coordinate	" class="form-label">Koordinat</label>
-                                <input type="text" class="form-control" id="coordinate	" aria-describedby="textlHelp" name="coordinate	">
+                                <label for="coordinate" class="form-label">Koordinat</label>
+                                <input type="text" class="form-control" id="coordinate" aria-describedby="textlHelp" name="coordinate">
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label">Provinsi</label>
@@ -67,24 +76,6 @@
                                 <select class="form-control select2" id="id_kelurahan" name="id_kelurahan">
 
                                 </select>
-                            </div>
-
-                            <div class="col-md-4">
-                                <label for="status" class="form-label">Jenjang</label>
-                                <select class="form-control select2" id="id_jenjang" name="id_jenjang">
-                                    <option value="">--Pilih Jenjang--</option>
-                                    <?php foreach ($jenjang as $key => $value) : ?>
-                                        <option value="<?= $value['id_jenjang'] ?>"><?= $value['jenjang'] ?></option>
-                                    <?php endforeach ?>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <label for="akreditasi" class="form-label">Akreditasi</label>
-                                <input type="text" class="form-control" id="akreditasi" aria-describedby="textlHelp" name="akreditasi">
-                            </div>
-                            <div class="col-md-4">
-                                <label for="status" class="form-label">Status</label>
-                                <input type="text" class="form-control" id="status" aria-describedby="textlHelp" name="status">
                             </div>
 
                             <div class="mb-3">

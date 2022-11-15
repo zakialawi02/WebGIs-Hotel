@@ -40,7 +40,6 @@
                                 <th>Nama Hotel</th>
                                 <th>Alamat</th>
                                 <th>Status</th>
-                                <th>Akreditasi</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -49,8 +48,7 @@
                                 <tr>
                                     <td><?= $S->nama_hotel; ?></td>
                                     <td><?= $S->alamat_hotel; ?></td>
-                                    <td><?= $S->status; ?></td>
-                                    <td><?= $S->akreditasi; ?></td>
+                                    <td> <?= $S->id_bintang; ?></td>
                                     <td>
                                         <div class="btn-group mr-2" role="group" aria-label="First group">
                                             <a href="/admin/data/hotel/edit/<?= $S->id_hotel; ?>" class="btn btn-primary bi bi-pencil-square" role="button"></a>
