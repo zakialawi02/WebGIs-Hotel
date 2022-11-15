@@ -1,4 +1,4 @@
-<?= $this->extend('_Layout/_template/_admin/templateSekolahData'); ?>
+<?= $this->extend('_Layout/_template/_admin/templateHotelData'); ?>
 
 
 <?= $this->section('content'); ?>
@@ -32,12 +32,12 @@
                         </div>
                     <?php endif; ?>
 
-                    <a href="/admin/data/sekolah/tambah" class="btn btn-primary m-1 mb-4 bi bi-plus" role="button">Tambah</a>
+                    <a href="/admin/data/hotel/tambah" class="btn btn-primary m-1 mb-4 bi bi-plus" role="button">Tambah</a>
 
                     <table class="table" style="width:100%" id="table1">
                         <thead>
                             <tr>
-                                <th>Nama Sekolah</th>
+                                <th>Nama Hotel</th>
                                 <th>Alamat</th>
                                 <th>Status</th>
                                 <th>Akreditasi</th>
@@ -45,18 +45,18 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($tampilSekolah as $S) : ?>
+                            <?php foreach ($tampilHotel as $S) : ?>
                                 <tr>
-                                    <td><?= $S->nama_sekolah; ?></td>
-                                    <td><?= $S->alamat_sekolah; ?></td>
+                                    <td><?= $S->nama_hotel; ?></td>
+                                    <td><?= $S->alamat_hotel; ?></td>
                                     <td><?= $S->status; ?></td>
                                     <td><?= $S->akreditasi; ?></td>
                                     <td>
                                         <div class="btn-group mr-2" role="group" aria-label="First group">
-                                            <a href="/admin/data/sekolah/edit/<?= $S->id_sekolah; ?>" class="btn btn-primary bi bi-pencil-square" role="button"></a>
+                                            <a href="/admin/data/hotel/edit/<?= $S->id_hotel; ?>" class="btn btn-primary bi bi-pencil-square" role="button"></a>
                                         </div>
                                         <div class="btn-group mr-2" role="group" aria-label="First group">
-                                            <form action="/admin/delete_Sekolah/<?= $S->id_sekolah; ?>" method="post">
+                                            <form action="/admin/delete_Hotel/<?= $S->id_hotel; ?>" method="post">
                                                 <?= csrf_field(); ?>
                                                 <input type="hidden" name="_method" value="DELETE">
                                                 <button type="submit" class="btn btn-danger bi bi-trash" onclick="return confirm('Yakin Hapus Data?')"></button>

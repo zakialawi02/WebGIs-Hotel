@@ -5,37 +5,41 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 
-class ModelSekolah extends Model
+class ModelHotel extends Model
 {
-    protected $table      = 'tbl_sekolah';
-    protected $primaryKey = 'id_sekolah';
+    protected $table      = 'tbl_hotel';
+    protected $primaryKey = 'id_hotel';
 
 
-    protected $allowFields = ['id_jenjang', 'nama_sekolah', 'alamat_sekolah', 'akreditasi', 'status', 'coordinate', 'foto', 'id_provinsi', 'id_kabkot', 'id_kecamatan'];
+    protected $allowFields = ['id_jenjang', 'nama_hotel', 'alamat_hotel', 'akreditasi', 'status', 'coordinate', 'foto', 'id_provinsi', 'id_kabkot', 'id_kecamatan'];
 
     function __construct()
     {
         $this->db = db_connect();
     }
 
-    function callSekolah($id_sekolah = false)
+    function callHotel($id_hotel = false)
     {
-        if ($id_sekolah === false) {
-            return $this->db->table('tbl_sekolah')->get();
+        if ($id_hotel === false) {
+            return $this->db->table('tbl_hotel')->get();
         } else {
-            return $this->Where(['id_sekolah' => $id_sekolah])->get();
+            return $this->Where(['id_hotel' => $id_hotel])->get();
         }
     }
 
-    function addSekolah($addSekolah)
+    function addHotel($addHotel)
     {
-        return $this->db->table('tbl_sekolah')->insert($addSekolah);
+        return $this->db->table('tbl_hotel')->insert($addHotel);
     }
 
-    public function updateSekolah($data, $id_sekolah)
+    public function updateHotel($data, $id_hotel)
     {
-        return $this->db->table('tbl_sekolah')->update($data, ['id_sekolah' => $id_sekolah]);
+        return $this->db->table('tbl_hotel')->update($data, ['id_hotel' => $id_hotel]);
     }
+
+
+
+
 
 
 

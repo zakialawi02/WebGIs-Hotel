@@ -1,4 +1,4 @@
-<?= $this->extend('_Layout/_template/_admin/templateSekolahData'); ?>
+<?= $this->extend('_Layout/_template/_admin/templateHotelData'); ?>
 
 
 <?= $this->section('content'); ?>
@@ -25,16 +25,16 @@
                     <div class="card-body">
                         <h3 class="card-title">Tambah Data</h3>
 
-                        <form class="row g-3" action="/admin/tambah_Sekolah" method="post" enctype="multipart/form-data">
+                        <form class="row g-3" action="/admin/tambah_Hotel" method="post" enctype="multipart/form-data">
                             <?= csrf_field(); ?>
 
                             <div class="mb-3">
-                                <label for="nama_sekolah" class="form-label">Nama Sekolah</label>
-                                <input type="text" class="form-control" id="nama_sekolah" aria-describedby="textlHelp" name="nama_sekolah">
+                                <label for="nama_hotel" class="form-label">Nama Hotel</label>
+                                <input type="text" class="form-control" id="nama_hotel" aria-describedby="textlHelp" name="nama_hotel">
                             </div>
                             <div class="col-md-6">
-                                <label for="alamat_sekolah" class="form-label">Alamat Sekolah</label>
-                                <input type="text" class="form-control" id="alamat_sekolah" aria-describedby="textlHelp" name="alamat_sekolah">
+                                <label for="alamat_hotel" class="form-label">Alamat Hotel</label>
+                                <input type="text" class="form-control" id="alamat_hotel" aria-describedby="textlHelp" name="alamat_hotel">
                             </div>
                             <div class="col-md-6">
                                 <label for="coordinate	" class="form-label">Koordinat</label>
@@ -72,7 +72,7 @@
                             <div class="col-md-4">
                                 <label for="status" class="form-label">Jenjang</label>
                                 <select class="form-control select2" id="id_jenjang" name="id_jenjang">
-                                    <option value="">--Pilih Jenjang Sekolah--</option>
+                                    <option value="">--Pilih Jenjang--</option>
                                     <?php foreach ($jenjang as $key => $value) : ?>
                                         <option value="<?= $value['id_jenjang'] ?>"><?= $value['jenjang'] ?></option>
                                     <?php endforeach ?>
@@ -88,8 +88,8 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="formFile" class="form-label">Upload Foto Sekolah</label>
-                                <input class="form-control" type="file" name="foto_sekolah" id="foto_sekolah" accept="image/*">
+                                <label for="formFile" class="form-label">Upload Foto Hotel</label>
+                                <input class="form-control" type="file" name="foto_hotel" id="foto_hotel" accept="image/*">
                                 <div id="FileHelp" class="form-text">.jpg/.png</div>
                             </div>
 

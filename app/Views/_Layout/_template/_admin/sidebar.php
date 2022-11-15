@@ -25,9 +25,9 @@
                 <span>GeoJson</span>
             </a>
 
-            <a class="nav-link collapsed" href="/admin/data/sekolah">
+            <a class="nav-link collapsed" href="/admin/data/hotel">
                 <i class="bi bi-building"></i>
-                <span>Sekolah</span>
+                <span>Hotel</span>
             </a>
         </li><!-- End F.A.Q Page Nav -->
 

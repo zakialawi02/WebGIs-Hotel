@@ -5,18 +5,18 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\ModelSetting;
 use App\Models\ModelGeojson;
-use App\Models\ModelSekolah;
+use App\Models\ModelHotel;
 
 class Admin extends BaseController
 {
     protected $ModelSetting;
     protected $ModelGeojson;
-    protected $ModelSekolah;
+    protected $ModelHotel;
     public function __construct()
     {
         $this->setting = new ModelSetting();
         $this->FGeojson = new ModelGeojson();
-        $this->sekolah = new ModelSekolah();
+        $this->hotel = new ModelHotel();
     }
     public function index()
     {
@@ -195,50 +195,49 @@ class Admin extends BaseController
 
     //  HOTEL  ====================================================================================
 
-    public function sekolah()
+    public function hotel()
     {
         $data = [
-            'title' => 'DATA SEKOLAH',
+            'title' => 'DATA HOTEL',
             'tampilData' => $this->setting->tampilData()->getResult(),
             'tampilGeojson' => $this->FGeojson->callGeojson()->getResult(),
             'updateGeojson' => $this->FGeojson->callGeojson()->getRow(),
-            'tampilSekolah' => $this->sekolah->callSekolah()->getResult(),
+            'tampilHotel' => $this->hotel->callHotel()->getResult(),
         ];
 
-        return view('admin/sekolahData', $data);
+        return view('admin/hotelData', $data);
     }
 
-    public function tambahSekolah()
+    public function tambahHotel()
     {
         $data = [
-            'title' => 'DATA SEKOLAH',
+            'title' => 'DATA HOTEL',
             'tampilData' => $this->setting->tampilData()->getResult(),
             'tampilGeojson' => $this->FGeojson->callGeojson()->getResult(),
             'updateGeojson' => $this->FGeojson->callGeojson()->getRow(),
-            'tampilSekolah' => $this->sekolah->callSekolah()->getResult(),
-            'provinsi' => $this->sekolah->allProvinsi(),
-            'jenjang' => $this->sekolah->allJenjang(),
+            'provinsi' => $this->hotel->allProvinsi(),
+            'jenjang' => $this->hotel->allJenjang(),
         ];
 
-        return view('admin/tambahSekolah', $data);
+        return view('admin/tambahHotel', $data);
     }
 
     // insert data
-    public function tambah_Sekolah()
+    public function tambah_Hotel()
     {
         // dd($this->request->getVar());
 
         // ambil file
-        $fileFotoSekolah = $this->request->getFile('foto_sekolah');
+        $fileFotoHotel = $this->request->getFile('foto_hotel');
         //generate random file name
-        $randomName = $fileFotoSekolah->getRandomName();
+        $randomName = $fileFotoHotel->getRandomName();
         // pindah file to hosting
-        $fileFotoSekolah->move(ROOTPATH . 'public/img/sekolah/', $randomName);
+        $fileFotoHotel->move(ROOTPATH . 'public/img/hotel/', $randomName);
 
 
         $data = [
-            'nama_sekolah' => $this->request->getVar('nama_sekolah'),
-            'alamat_sekolah'  => $this->request->getVar('alamat_sekolah'),
+            'nama_hotel' => $this->request->getVar('nama_hotel'),
+            'alamat_hotel'  => $this->request->getVar('alamat_hotel'),
             'coordinate'  => $this->request->getVar('coordinate'),
             'id_provinsi'  => $this->request->getVar('id_provinsi'),
             'id_kabupaten'  => $this->request->getVar('id_kabupaten'),
@@ -247,34 +246,36 @@ class Admin extends BaseController
             'id_jenjang'  => $this->request->getVar('id_jenjang'),
             'akreditasi'  => $this->request->getVar('akreditasi'),
             'status'  => $this->request->getVar('status'),
-            'foto_sekolah'  => $randomName,
+            'foto_hotel'  => $randomName,
         ];
 
-        $addSekolah = $this->sekolah->addSekolah($data);
+        $addHotel = $this->hotel->addHotel($data);
 
-        if ($addSekolah) {
+        if ($addHotel) {
             session()->setFlashdata('alert', 'Data Anda Berhasil Ditambahkan.');
-            return $this->response->redirect(site_url('/admin/data/sekolah'));
+            return $this->response->redirect(site_url('/admin/data/hotel'));
         }
     }
 
-    public function delete_Sekolah($id_sekolah)
+    public function delete_Hotel($id_hotel)
     {
 
-        $data = $this->sekolah->callSekolah($id_sekolah)->getRow();
-        $file = $data->foto_sekolah;
-        unlink("img/sekolah/" . $file);
+        $data = $this->hotel->callHotel($id_hotel)->getRow();
+        $file = $data->foto_hotel;
+        unlink("img/hotel/" . $file);
 
-        $this->sekolah->delete(['id_sekolah' => $id_sekolah]);
+        $this->hotel->delete(['id_hotel' => $id_hotel]);
         session()->setFlashdata('alert', "Data Berhasil dihapus.");
-        return $this->response->redirect(site_url('/admin/data/sekolah'));
+        return $this->response->redirect(site_url('/admin/data/hotel'));
     }
+
+
 
     //  SCRAP KAB/KOT, KECAMATAN, KELURAHAN
     public function kabupaten()
     {
         $id_provinsi = $this->request->getPost('id_provinsi');
-        $kab = $this->sekolah->allKabupaten($id_provinsi);
+        $kab = $this->hotel->allKabupaten($id_provinsi);
         echo '<option value="">--Pilih Kab/Kota</option>';
         foreach ($kab as $key => $value) {
             echo '<option value=' . $value['id_kabupaten'] . '>' . $value['nama_kabupaten'] . '</option>';
@@ -283,7 +284,7 @@ class Admin extends BaseController
     public function kecamatan()
     {
         $id_kabupaten = $this->request->getPost('id_kabupaten');
-        $kec = $this->sekolah->allKecamatan($id_kabupaten);
+        $kec = $this->hotel->allKecamatan($id_kabupaten);
         echo '<option value="">--Pilih Kecamatan</option>';
         foreach ($kec as $key => $value) {
             echo '<option value=' . $value['id_kecamatan'] . '>' . $value['nama_kecamatan'] . '</option>';
@@ -292,7 +293,7 @@ class Admin extends BaseController
     public function kelurahan()
     {
         $id_kecamatan = $this->request->getPost('id_kecamatan');
-        $kel = $this->sekolah->allKelurahan($id_kecamatan);
+        $kel = $this->hotel->allKelurahan($id_kecamatan);
         echo '<option value="">--Pilih Desa/Kelurahan</option>';
         foreach ($kel as $key => $value) {
             echo '<option value=' . $value['id_kelurahan'] . '>' . $value['nama_kelurahan'] . '</option>';
